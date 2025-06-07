@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static '/css/about.css' %}?v={{ timestamp }}">
+</head>
+
+<body>
+    <nav style="display: flex;" id="topNav-wrap">
+        <div class="icon"><img src="{% static '/image/logo.png'%}" alt="logo"></div>
+        <div class="header">
+            <div class="icon"><b><a href="{% url 'rg_Front_page' %}">Home</a></b></div>
+            <div class="icon"><b><a href="{% url 'about' %}">About</a></b></div>
+            <div class="icon"><b><a href="{% url 'contact' %}">Contact us</a></b></div>
+            <div class="icon"><b><a href="{% url 'portfolio' %}">Portfolio</a></b></div>
+            <div class="icon"><b><a href="{% url 'Login_page' %}">Log in &rightarrow;</a></b></div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Maximize your returns while minimizing risk with our cutting-edge portfolio optimization tools.</p>
+        
+        <h3>Our Mission</h3>
+        <p>We empower investors with data-driven insights to optimize their portfolios effectively.</p>
+        
+        <h3>Key Features</h3>
+        <ul>
+            <li><b>Secure User Registration & Login:</b> Access personalized portfolio management tools.</li>
+            <li><b>Portfolio Input Form:</b> Easily input stocks and weights for analysis.</li>
+            <li><b>Interactive Portfolio Page:</b> Analyze and optimize your investments with dynamic tools.</li>
+            <li><b>Risk Management Strategies:</b> Utilize diversification, stop-loss orders, and rebalancing.</li>
+        </ul>
+        
+        <h3>Advanced Analytics</h3>
+        <p>Our platform offers powerful calculations, including Expected Return, Value at Risk (VaR), Sharpe Ratio, and Volatility.</p>
+        
+        <h3>Visualizing Data</h3>
+        <p>Explore key portfolio insights through visualizations like the Efficient Frontier, Correlation Matrix, and SMA30 vs. Close Price trends.</p>
+        
+        <h3>Take Control of Your Investments</h3>
+        <p>With real-time calculations, stock selection, and interactive visualizations, we provide the tools you need for smarter investing.</p>
+    </div>
+</body>
+</html>

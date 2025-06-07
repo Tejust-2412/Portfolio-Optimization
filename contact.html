@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Portfolio Optimization</title>
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}?v={{ timestamp }}">
+</head>
+<body>
+
+  <!-- Back Button -->
+  <div class="back-button">
+    <a href="{% url 'rg_Front_page' %}">&#8592; Back to Home</a>
+  </div>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p>If you have any questions about our portfolio optimization tools, feel free to reach out!</p>
+        <p><strong>Email:</strong> kadamtejust2412@gmail.com</p>
+        <p><strong>Phone:</strong> +91  9714976444</p>
+        <p><strong>Address:</strong> CPC , Gujarat University</p>
+      </div>
+
+      <!-- Contact Form -->
+      <!-- <form class="contact-form" action="#" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form> -->
+    </div>
+  </div>
+
+</body>
+</html>
