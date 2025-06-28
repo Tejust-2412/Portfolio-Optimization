@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Optimization</title>
+    <link rel="stylesheet" href="{% static '/css/Front.css'%}?v={{ timestamp }}">
+</head>
+
+<body>
+    <nav style="display: flex;" id="topNav-wrap">
+        <div class="icon"><img src="{% static '/image/logo.png'%}" alt="logo"></div>
+        <div class="header">
+            <div class="icon"><b><a href="{% url 'rg_Front_page' %}">Home</a></b></div>
+            <div class="icon"><b><a href="{% url 'about' %}">About</a></b></div>
+            <div class="icon"><b><a href="{% url 'contact' %}">Contact us</a></b></div>
+            <!-- <div class="icon"><b><a href="{% url 'portfolio' %}">Portfolio</a></b></div> -->
+            <div class="icon"><b><a href="{% url 'Login_page' %}">Log in &rightarrow;</a></b></div>
+        </div>
+    </nav>
+
+    <div class="Container">
+        <div class="Container-para">
+            <h1>Portfolio <br> Optimization </h1>
+            <p style="font-size: medium; padding-left: 55px;">We will explore the limitations of traditional systems.
+                Our proposed system <br>
+                offers innovative solutions. Join us to discover the future of investment strategy.
+            </p>
+            <div class="Container-btn"><button id="Container-btn"><a href="{% url 'registration' %}"> Registration
+                        &rightarrow; </a></button></div>
+        </div>
+        <div class="Front-img-2"><img src="{% static '/image/Front-img-2.png' %}" alt=""></div>
+    </div>
+    <div class="Container-3">
+        <div>
+            <div><h1>What is portfolio optimization and why should i care?</h1></div>
+            <div><p>
+                Portfolio optimization is the process of selecting the best combination of assets (such as stocks, bonds,
+                real estate, or other investments) to maximize returns while minimizing risk based on your financial
+                goals and risk tolerance. It relies on mathematical models and statistical techniques, such as Modern
+                Portfolio Theory (MPT) by Harry Markowitz, to construct an efficient portfolio.</p></div>
+        </div>
+        <div>
+            <img src="{% static 'image/con-3-1.jpeg'%}" alt="" srcset="">
+        </div>
+    </div>
+    <div class="Container-2">
+        <h1>What is Portfolio Optimization...??</h1>
+        <div class="Container-2-1">
+            <div><img src="{% static 'image/con-2-1.jpeg'%}" alt="">
+                <h3>Enhanced Speed</h3>
+                <p>Fast processing enables rapid decision-making. <br> This ensures timely execution.</p>
+            </div>
+            <div><img src="{% static 'image/con-2-2.jpeg'%}" alt="" srcset="">
+                <h3>Advanced Automation</h3>
+                <p>Automation reduces manual intervention . <br> It minimizes errors and costs.</p>
+            </div>
+            <div><img src="{%static 'image/con-2-3.jpeg'%}" alt="" srcset="">
+                <h3>Comprehensive <br>Risk Management</h3>
+                <p>Sophisticated models mitigate potential losses. <br> They adapt to market fluctuations.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
